@@ -1,1 +1,2 @@
-# Non-Coding-
+# Non-Coding
+Basic linux commands available 
