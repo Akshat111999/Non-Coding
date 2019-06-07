@@ -1,0 +1,24 @@
+# Run pinky command and this o/p into file pinky.txt
+    cmd----> pinky > pinky.txt
+
+# Run command 'adhoc' and redirect this command std error o/p to above file with maintaining the existing contents of file
+    cmd----> adhoc 2>> pinky.txt
+
+# Extract login contents column from pinky.txt
+    cmd----> cut -f 1 pinky.txt
+
+# Redirect o/p of above command to a new file login.txt    
+    cmd----> cut -f 1 pinky.txt > login.txt
+
+# Extract http word in every file under /etc/ directory and its recursive directory
+    cmd----> grep -r http /etc/
+
+# Send command like free , uptime, etc o/p to mailid root@localhost 
+    cmd----> uptime | mail -s "Uptime info" root@localhost
+
+# Extract the content of 7 and 8  row from file /etc/passwd and store o/p to file raw.txt
+    cmd----> cat /etc/passwd | head -8 | tail -2 > raw.txt
+        
+# Discard o/p of any command
+    cmd----
+    
