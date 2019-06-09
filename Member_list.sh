@@ -1,2 +1,2 @@
 getent group lw
-grep lw /etc/group
+grep lw /etc/group 
