@@ -4,8 +4,8 @@ echo $HISTSIZE
 HISTSIZE=1999
 # save it permanent 
 vim .bashrc   # write HISTSIZE=1999 and save it
-# to show history with date and time
-HISTTIMEFORMAT="%d/%m/%y %T
+# to show history with date and time format
+HISTTIMEFORMAT="%d/%m/%y %T %t
 # update history entered manually in .bash_history file
 vim /home/lw/.bash_history  # write a command for eg:- date
 
