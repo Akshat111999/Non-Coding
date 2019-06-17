@@ -1,0 +1,9 @@
+# How to show Downloads file on the desktop
+# 1. Change the location to .config directory
+command --> cd .config
+# 2. Open user-dirs.dirs file
+command --> gedit user-dirs.dirs
+# 3. Change the path of Desktop to Downloads
+# 4. Save user-dirs.dirs file 
+# 5. Reboot your system 
+# 6. Now the files in the Download directory will be shown on the Desktop
