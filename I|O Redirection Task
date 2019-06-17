@@ -20,5 +20,5 @@
     cmd----> cat /etc/passwd | head -8 | tail -2 > raw.txt
         
 # Discard o/p of any command
-    cmd----
+    cmd----> free -m > /dev/null
     
