@@ -1,0 +1,28 @@
+# make a directory where image file can be stored
+mkdir /myweb
+cd /myweb
+vim Dockerfile  ##contents to be written in this file are as follows
+
+FROM fedora
+# this is base image where we want some changes
+# FROM check images in local system if not present then pull from DH
+MAINTAINER akshatmathur111999@gmail.com
+#info about image creator
+RUN yum install httpd -y
+# launch a container and do the changes
+COPY index.html /var/www/html
+# source base os --> container(destination)
+EXPOSE 80
+# we want to use http protocol inside container
+ENTRYPOINT httpd -DFOREGROUND
+# by default process of container
+# alternative way of httpd service
+
+
+# save this file by pressing esc then :wq
+
+docker build -t "adhocweb" /myweb  # to build the image 
+docker images  # to see the new created image
+
+
+
